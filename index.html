@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialized Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <title>My Website</title>
+</head>
+<body class="grey lighten-3 black text">
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="container">
+                <a href="" class="brand-logo">My Website</a>
+        <!-- Navbar -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger right">
+                <i class="material-icons">menu</i>
+            </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="navbar-sidenav.html">Home</a></li>
+                    <li class="active"><a href="index.html">About</a></li>
+                    <li><a href="table-media.html">Tables & Media</a></li>
+                    <li><a href="socials.html">Socials</a></li>
+                    <li>
+                        <a href="" class="dropdown-trigger" data-target="dropdown-contact">
+                            <i class="material-icons">
+                                arrow_drop_down
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Dropdown Structure for Navbar -->
+        <ul id="dropdown-contact" class="dropdown-content">
+            <li><a href="https://www.facebook.com/socialsbyjohnragas/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/socialsbyjohn/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@socialsbyjohn">Tiktok</a></li>
+        </ul>
+        
+    </div>
+        <!-- Sidenav -->
+    <div>
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="images/Cebu.jpg" alt="">
+                    </div>
+                    <a href="">
+                        <img src="images/img2.jpg" alt="" class="circle">
+                    </a>
+                    <a href="">
+                        <span class="black-text name">John Manroh Ragas
+                        </span>
+                    </a>
+                    <a href="">
+                        <span class="black-text email">johnmanroh.ragas@gmail.com
+                        </span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <li class="divider">
+                    <li><a href="navbar-sidenav.html">Home</a></li>
+                    <li class="active"><a href="index.html">About</a></li>
+                    <li><a href="table-media.html">Tables & Media</a></li>
+                    <li><a href="socials.html">Socials</a></li>
+                    <li>
+                        <a href="" class="dropdown-trigger" data-target="dropdown-sidenav">
+                            <i class="material-icons">
+                                arrow_drop_down
+                            </i>
+                        </a>
+                    </li>
+                </li>
+            </li>
+        </ul>
+        <!-- Dropdown Structure for Sidenav -->
+        <ul id="dropdown-sidenav" class="dropdown-content">
+            <li><a href="https://www.facebook.com/socialsbyjohnragas/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/socialsbyjohn/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@socialsbyjohn">Tiktok</a></li>
+        </ul>
+        <br><br>
+    </div>
+            <div class="container">
+                <h1 class="grey-text text-darken-3">My Portfolio</h1>
+                <div class="card-panel pink darken-3 grey-text text-lighten-3">
+                    <h4 class="white-text">About Me</h4>
+                </div>
+                    <blockquote>
+                    I'm John Manroh Ragas. I am a dedicated and hardworking person who believes in integrity and good working relations. I am also a goal-oriented person, and I love playing chess and guitar. I've always loved cooking Filipino foods like adobo, menudo, caldereta and a lot more.
+                    </blockquote>
+                
+                <div class="card-panel pink darken-3 grey-text text-lighten-3">
+                    <h4 class="white-text">Contact Me</h4>
+                </div>
+                    <blockquote>
+                    <p>Contact Number: 09123456789</p>
+                    <p>Email Address: johnmanroh.ragas@gmail.com</p>
+                    </blockquote>
+                
+            </div>
+
+
+            <div style="height: 1000px;"></div>
+    
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- Dropdown Structure -->
+    <script>
+        $(document).ready(function(){
+    // dropdown init
+            $('.dropdown-trigger').dropdown();
+    // sidenav init
+            $('.sidenav').sidenav();
+        });
+
+
+    </script>
+</body>
+</html>

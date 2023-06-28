@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/2101086127.js" crossorigin="anonymous"></script>
+    <!-- CDN JS Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Materialized Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <title>Grid - Materialize</title>
+</head>
+<body class="white">
+    <h1 class="container red-text text-lighten-2 center-on-small-only">Grid</h1>
+    <div class="divider"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col s10">
+                <br>
+                <p>We are using a standard 12 column fluid responsive grid system. The grid helps you layout your page in an ordered, easy fashion.</p>
+        <!-- Container -->
+                <div id="Container" class="section scrollspy">
+                    <h3 class="red-text text-lighten-2">Container</h3>
+                    <p>The container class is not strictly part of the grid but is important in laying out content. It allows you to center your page content. The container class is set to ~70% of the window width. It helps you center and contain your page content. We use the container to contain our body content.</p>
+            <!-- Demo -->
+                    <p class="flow-text">Demo</p>
+                    <p>Try the button below to see what the page looks like without containers.</p>
+                    <button class="btn">TURN ON CONTAINERS</button>
+                    <br><br>
+                    <img src="images/container-img.png" alt="" class="responsive-img">
+                    <br><br>
+                    <p>To add a container just put your content inside a 'div> tag with a container class. Here's an example of how your page might be set up.</p>
+                    <img src="images/code-img.png" alt="" class="responsive-img">
+                    <br><br>
+                </div>
+        <!-- Introduction -->
+                <div id="Introduction" class="section scrollspy">
+                    <h3 class="red-text text-lighten-2">Introduction</h3>
+                    <p>Take a look at this section to quickly understand how the grid works!</p>
+            <!-- 12 Columns -->
+                    <p class="flow-text">12 Columns</p>
+                    <p>Our standard grid has 12 columns. No matter the size of the browser, each of these columns will always have an equal width.</p>
+            <!-- Rows -->
+                    <div class="col s12 m6 l1">
+                        <div class="card-panel orange darken-4">
+                            <h7 class="white-text">1</h7>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l1">
+                        <div class="card-panel orange darken-4">
+                            <h7 class="white-text">2</h7>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l1">
+                        <div class="card-panel orange darken-4">
+                            <h7 class="white-text">3</h7>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l1">
+                        <div class="card-panel orange darken-4">
+                            <h7 class="white-text">4</h7>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l1">
+                        <div class="card-panel orange darken-4">
+                            <h7 class="white-text">5</h7>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l1">
+                        <div class="card-panel orange darken-4">
+                            <h7 class="white-text">6</h7>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l1">
+                        <div class="card-panel orange darken-4">
+                            <h7 class="white-text">7</h7>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l1">
+                        <div class="card-panel orange darken-4">
+                            <h7 class="white-text">8</h7>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l1">
+                        <div class="card-panel orange darken-4">
+                            <h7 class="white-text">9</h7>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l1">
+                        <div class="card-panel orange darken-4">
+                            <h7 class="white-text">10</h7>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l1">
+                        <div class="card-panel orange darken-4">
+                            <h7 class="white-text">11</h7>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l1">
+                        <div class="card-panel orange darken-4">
+                            <h7 class="white-text">12</h7>
+                        </div>
+                    </div>
+            <!-- End of Columns -->
+                    <p>To get a feel of how the grid is used in HTML, take a look at the code below which will produce a similar result to the one above.</p>
+                    <img src="images/code-img2.png" alt="" class="responsive-img">
+                    <p>Note: For now, just know that the s1 stands for small-1 which in plain English means "1 column on small screens".</p>
+            <!-- Columns Inside Rows -->
+                    <p class="flow-text">Columns live inside Rows</p>
+                    <p>Remember when you are creating your layout that all columns must be contained inside a row and that you must add the col class to your inner divs to make them into columns</p>
+                </div>
+            </div>
+        <!-- Right side -->
+            <div class="col hide-on-small-and-medium m3 l2">
+                <img src="images/adobe-stock-img.png" alt="" class="responsive-img adobe-img">
+                <br>
+                    <a href="#" class="red-text text-lighten-2 adobe-text">Get 10 free Adobe Stock photos. Start downloading amazing royalty-free stock photos today.</a>
+                    <br>
+                    <div class="row">
+                        <div class="col s10 offset-s2">
+                            <a href="#" class="red-text text-lighten-2 adobe-text adobe-text-small">ads via Carbon</a>
+                        </div>
+                    </div>
+            </div>    
+            <br>
+        <!-- Scrollspy -->
+            <div class="col hide-on-small-and-medium m3 l2">
+                <div class="toc-wrapper pinned" style="top: 340px;">
+                    <ul class="section table-of-contents">
+                    <li><a href="#Container">Container</a></li>
+                    <li><a href="#Introduction">Introduction</a></li>
+                    <li><a href="#Offsets">Offsets</a></li>
+                    <li><a href="">Push and Pull</a></li>
+                    <li><a href="">Creating Layouts</a></li>
+                    <li><a href="">Responsive Layouts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s10">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <div class="card-panel orange darken-4 flow-text white-text center">This div is 12-columns wide on all screen sizes</div>
+                                    </div>
+                                    <div class="col s6">
+                                        <div class="card-panel orange darken-4 flow-text white-text center">6-columns (one-half)</div>
+                                    </div>
+                                    <div class="col s6">
+                                        <div class="card-panel orange darken-4 flow-text white-text center">6-columns (one-half)</div>
+                                    </div>
+                                    <br><br>
+                                    <img src="images/code-img3.png" alt="" class="responsive-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        <!-- Offsets -->
+                <div id="Offsets" class="section scrollspy">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s10">
+                                <div class="row">
+                                    <div class="col s12">
+                                        <h3 class="red-text text-lighten-2">Offsets</h3>
+                                    <p>To offset, simply add offset-s2 to the class where s signifies the screen class-prefix (s = small, m = medium, l = large) and the number after is the number of columns you want to offset by.</p>
+                                    <div class="col s12">
+                                        <div class="card-panel orange darken-4 flow-text white-text center">This div is 12-columns wide on all screen sizes</div>
+                                    </div>
+                                    <div class="col s6 offset-s6">
+                                        <div class="card-panel orange darken-4 flow-text white-text center">6-columns offset-by-6</div>
+                                    </div>
+                                    <img src="images/code-img4.png" alt="" class="responsive-img">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+    
+
+                    
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+    });
+</script>
+
+
+    
+</body>
+</html>

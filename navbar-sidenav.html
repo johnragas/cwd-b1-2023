@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/2101086127.js" crossorigin="anonymous"></script>
+    <!-- CDN JS Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Materialized Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Navbar & Sidenav</title>
+</head>
+<body class="grey lighten-3 black text">
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="container">
+                <a href="" class="brand-logo">My Website</a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger right">
+                <i class="material-icons">menu</i>
+            </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li class="active"><a href="navbar-sidenav.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="table-media.html">Tables & Media</a></li>
+                    <li><a href="socials.html">Socials</a></li>
+                    <li>
+                        <a href="" class="dropdown-trigger" data-target="dropdown-contact">
+                            <i class="material-icons">
+                                arrow_drop_down
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Dropdown Structure for Navbar -->
+        <ul id="dropdown-contact" class="dropdown-content">
+            <li><a href="https://www.facebook.com/socialsbyjohnragas/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/socialsbyjohn/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@socialsbyjohn">Tiktok</a></li>
+        </ul>
+        
+    </div>
+    <!-- Sidenav -->
+    <div>
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="images/Cebu.jpg" alt="">
+                    </div>
+                    <a href="">
+                        <img src="images/img2.jpg" alt="" class="circle">
+                    </a>
+                    <a href="">
+                        <span class="black-text name">John Manroh Ragas
+                        </span>
+                    </a>
+                    <a href="">
+                        <span class="black-text email">johnmanroh.ragas@gmail.com
+                        </span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <li class="divider">
+                    <li class="active"><a href="navbar-sidenav.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="table-media.html">Tables & Media</a></li>
+                    <li><a href="socials.html">Socials</a></li>
+                    <li>
+                        <a href="" class="dropdown-trigger" data-target="dropdown-sidenav">
+                            <i class="material-icons">
+                                arrow_drop_down
+                            </i>
+                        </a>
+                    </li>
+                </li>
+            </li>
+        </ul>
+    
+        <!-- Dropdown Structure for Sidenav -->
+        <ul id="dropdown-sidenav" class="dropdown-content">
+            <li><a href="https://www.facebook.com/socialsbyjohnragas/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/socialsbyjohn/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@socialsbyjohn">Tiktok</a></li>
+        </ul>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2 class="red-text text-lighten-2">Icons</h2>
+                <i class="material-icons light-blue-text large">beenhere</i>
+                <i class="material-icons deep-purple-text medium">cached</i>
+                <i class="material-icons deep-orange-text small">camera</i>
+                <i class="material-icons pink-text large">menu</i>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+
+    <script>
+        $(document).ready(function(){
+    // dropdown init
+            $('.dropdown-trigger').dropdown();
+    // sidenav init
+            $('.sidenav').sidenav();
+        });
+
+
+    </script>
+</body>
+</html>

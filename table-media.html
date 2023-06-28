@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialized Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Tables and Media</title>
+</head>
+<body class="grey lighten-3 black text">
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="container">
+                <a href="" class="brand-logo">My Website</a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger right">
+                <i class="material-icons">menu</i>
+            </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="navbar-sidenav.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li class="active"><a href="table-media.html">Tables & Media</a></li>
+                    <li><a href="socials.html">Socials</a></li>
+                    <li>
+                        <a href="" class="dropdown-trigger" data-target="dropdown-contact">
+                            <i class="material-icons">
+                                arrow_drop_down
+                            </i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Dropdown Structure for Navbar -->
+        <ul id="dropdown-contact" class="dropdown-content">
+            <li><a href="https://www.facebook.com/socialsbyjohnragas/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/socialsbyjohn/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@socialsbyjohn">Tiktok</a></li>
+        </ul>
+        
+    </div>
+        <!-- Sidenav -->
+    <div>
+        <ul id="slide-out" class="sidenav">
+            <li>
+                <div class="user-view">
+                    <div class="background">
+                        <img src="images/Cebu.jpg" alt="">
+                    </div>
+                    <a href="">
+                        <img src="images/img2.jpg" alt="" class="circle">
+                    </a>
+                    <a href="">
+                        <span class="black-text name">John Manroh Ragas
+                        </span>
+                    </a>
+                    <a href="">
+                        <span class="black-text email">johnmanroh.ragas@gmail.com
+                        </span>
+                    </a>
+                </div>
+            </li>
+            <li>
+                <li class="divider">
+                    <li><a href="navbar-sidenav.html">Home</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li class="active"><a href="table-media.html">Tables & Media</a></li>
+                    <li><a href="socials.html">Socials</a></li>
+                    <li>
+                        <a href="" class="dropdown-trigger" data-target="dropdown-sidenav">
+                            <i class="material-icons">
+                                arrow_drop_down
+                            </i>
+                        </a>
+                    </li>
+                </li>
+            </li>
+        </ul>
+        <!-- Dropdown Structure for Sidenav -->
+        <ul id="dropdown-sidenav" class="dropdown-content">
+            <li><a href="https://www.facebook.com/socialsbyjohnragas/">Facebook</a></li>
+            <li><a href="https://www.instagram.com/socialsbyjohn/">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@socialsbyjohn">Tiktok</a></li>
+        </ul>
+    </div>
+    <!-- Search bar-->
+
+
+        <div class="row">
+            <div class="col s12 offset-s10">
+                <div class="nav-wrapper">
+                    <form>
+                        <div class="input-field">
+                            <input id="search" type="search" required>
+                            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                            <i class="material-icons">close</i>
+                        </div>
+                    </form> 
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+        <div class="caption center-align">
+            <h1 class="black-text">Tables and Media</h1>
+        </div>
+    <!-- Table -->  
+<div class="container">    
+<table class="black-text text-lighten-3">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Item Name</th>
+            <th>Item Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+        </tr>
+        <tr>
+            <td>Allan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+        </tr>
+        <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+
+
+    <!-- Striped Table -->
+
+<table class="striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Item Name</th>
+            <th>Item Price</th>
+        </tr>
+    </thead>    
+    <tbody>
+        <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+        </tr>
+        <tr>
+            <td>Allan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+        </tr>
+        <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+    <!-- Highlight Table -->
+<table class="highlight">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Item Name</th>
+            <th>Item Price</th>
+        </tr>
+    </thead> 
+    <tbody>
+        <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+        </tr>
+        <tr>
+            <td>Allan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+        </tr>
+        <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+        </tr>
+        <tr>
+            <td>Shannon</td>
+            <td>Kitkat</td>
+            <td>$9.99</td>
+        </tr>
+    </tbody>
+</table>
+<br><br>
+    <!-- Centered Table -->
+    <table class="centered highlight">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>$0.87</td>
+            </tr>
+            <tr>
+                <td>Allan</td>
+                <td>Jellybean</td>
+                <td>$3.76</td>
+            </tr>
+            <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>$7.00</td>
+            </tr>
+            <tr>
+                <td>Shannon</td>
+                <td>Kitkat</td>
+                <td>$9.99</td>
+            </tr>
+        </tbody>
+    </table>
+<br><br>
+    <!-- Responsive Table -->
+    <table class="centered highlight responsive-table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Item Name</th>
+                <th>Item Price</th>
+            </tr>
+        </thead> 
+        <tbody>
+            <tr>
+                <td>Alvin</td>
+                <td>Eclair</td>
+                <td>$0.87</td>
+            </tr>
+            <tr>
+                <td>Allan</td>
+                <td>Jellybean</td>
+                <td>$3.76</td>
+            </tr>
+            <tr>
+                <td>Jonathan</td>
+                <td>Lollipop</td>
+                <td>$7.00</td>
+            </tr>
+            <tr>
+                <td>Shannon</td>
+                <td>Kitkat</td>
+                <td>$9.99</td>
+            </tr>
+        </div>
+    </tbody>
+</table>
+</div>
+<br><br>
+
+    <!-- Media CSS -->
+<div class="container">
+    <div class="row">
+        <div class="col s12 m10 offset-m1 l8 offset-l2">
+            <div class="card-panel grey lighten-5 z-depth-4">
+                <div class="row valign-wrapper">
+                    <div class="col s12">
+                        <img src="images/img1.jpg" alt="" class="circle responsive-img">
+                    </div>
+                    <div class="col s12">
+                        <span class="black-text">
+                        Web Development Course for Beginners
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container center">
+        <iframe width="640" height="360" src="https://www.youtube.com/embed/GEfuOMzRgXo" title="Web development for beginners: What does a web developer do?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+<br><br>
+    <div class="row">
+        <div class="col s12 center">    
+            <video class="responsive-video" controls style="width:640px;">
+                <source src="videos/Video2.mkv">
+            </video>
+        </div>
+    </div>
+<br><br>
+<div class="caption center-align">
+<h1 class="black-text">Places to Visit</h1>
+    <div class="container">
+        
+        <div class="row"> 
+            <div class="col s12 m6 l4">
+                <img src="images/Boracay.jpg" alt="" class="materialboxed responsive-img" data-caption="Boracay, Philippines">
+                <br>
+            </div>
+            <div class="col s12 m6 l4">
+                <img src="images/Cebu.jpg" alt="" class="materialboxed responsive-img" data-caption="Cebu, Philippines">
+                <br>
+            </div>
+            <div class="col s12 m6 l4">
+                <img src="images/La Union.jpg" alt="" class="materialboxed responsive-img" data-caption="La Union, Philippines">
+                <br>
+            </div>
+            <div class="col s12 m6 l4 hide-on-large-only">
+                <img src="images/Palawan.jpg" alt="" class="materialboxed responsive-img" data-caption="Palawan, Philippines">
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col s12">
+            <div class="slider">
+                <ul class="slides">
+                  <li>
+                    <img src="images/Boracay.jpg" alt="">
+                    <div class="caption center-align">
+                      <h3 class="white-text text-darken-3">Boracay, Philippines</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="images/Cebu.jpg" alt="">
+                    <div class="caption center-align">
+                      <h3 class="black-text">Cebu, Philippines</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="images/La Union.jpg" alt="">
+                    <div class="caption center-align">
+                      <h3 class="black-text">La Union, Philippines</h3>
+                    </div>
+                  </li>
+                  <li>
+                    <img src="images/Palawan.jpg" alt="">
+                    <div class="caption center-align">
+                      <h3 class="white-text text-darken-3">Palawan, Philippines</h3>
+                    </div>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
+
+
+
+
+
+
+<div style="height: 1000px;"></div>
+
+
+
+
+
+
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
+    </script>
+
+    <!-- Initialization -->
+    <script>
+        $(document).ready(function(){
+    // Init Materialbox
+            $('.materialboxed').materialbox({
+                inDuration: 5000,
+                outDuration: 5000
+            });
+    // Init Slider
+            $('.slider').slider({
+                indicators: true,
+                height: 500,
+                duration: 400,
+                interval: 2000
+            });
+        });
+    </script>
+
+    <!-- Dropdown Structure -->
+    <script>
+        $(document).ready(function(){
+    // dropdown init
+            $('.dropdown-trigger').dropdown();
+    // sidenav init
+            $('.sidenav').sidenav();
+    // search bar init
+            $('input-field').search();
+        });
+
+
+    </script>
+
+</body>
+</html>

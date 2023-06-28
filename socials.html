@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Materialized Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    
+    <title>Socials</title>
+</head>
+<body class="grey lighten-3 black text">
+    <div class="navbar-fixed">
+        <nav class="black">
+            <div class="container">
+                <a href="" class="brand-logo">My Website</a>
+        <!-- Navbar -->
+            <a href="#" data-target="slide-out" class="sidenav-trigger right">
+                <i class="material-icons">menu</i>
+            </a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="navbar-sidenav.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="table-media.html">Tables & Media</a></li>
+                        <li class="active"><a href="socials.html">Socials</a></li>
+                        <li>
+                            <a href="" class="dropdown-trigger" data-target="dropdown-contact">
+                                <i class="material-icons">
+                                    arrow_drop_down
+                                </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Dropdown Structure for Navbar -->
+            <ul id="dropdown-contact" class="dropdown-content">
+                <li class="tab col s2">
+                    <a target="_blank" href="https://www.facebook.com/socialsbyjohnragas/">Facebook</a>
+                </li>
+                <li class="tab col s2">
+                    <a target="_blank" href="https://www.instagram.com/socialsbyjohn/">Instagram</a>
+                </li>
+                <li class="tab col s2">
+                    <a target="_blank" href="https://www.tiktok.com/@socialsbyjohn">Tiktok</a>
+                </li>
+            </ul>
+            
+        </div>
+            <!-- Sidenav -->
+        <div>
+            <ul id="slide-out" class="sidenav">
+                <li>
+                    <div class="user-view">
+                        <div class="background">
+                            <img src="images/Cebu.jpg" alt="">
+                        </div>
+                        <a href="">
+                            <img src="images/img2.jpg" alt="" class="circle">
+                        </a>
+                        <a href="">
+                            <span class="black-text name">John Manroh Ragas
+                            </span>
+                        </a>
+                        <a href="">
+                            <span class="black-text email">johnmanroh.ragas@gmail.com
+                            </span>
+                        </a>
+                    </div>
+                </li>
+                <li>
+                    <li class="divider">
+                        <li><a href="navbar-sidenav.html">Home</a></li>
+                        <li><a href="index.html">About</a></li>
+                        <li><a href="table-media.html">Tables & Media</a></li>
+                        <li class="active"><a href="socials.html">Socials</a></li>
+                        <li>
+                            <a href="" class="dropdown-trigger" data-target="dropdown-sidenav">
+                                <i class="material-icons">
+                                    arrow_drop_down
+                                </i>
+                            </a>
+                        </li>
+                    </li>
+                </li>
+            </ul>
+            <!-- Dropdown Structure for Sidenav -->
+            <ul id="dropdown-sidenav" class="dropdown-content">
+                <li><a href="https://www.facebook.com/socialsbyjohnragas/">Facebook</a></li>
+                <li><a href="https://www.instagram.com/socialsbyjohn/">Instagram</a></li>
+                <li><a href="https://www.tiktok.com/@socialsbyjohn">Tiktok</a></li>
+            </ul>
+        </div>
+
+        <div class="input-field">
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="col s4 offset-s8">
+                        <input id="search" type="search" required>
+                        <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                        <i class="material-icons">close</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+<!-- jQuery CDN -->
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+// dropdown init
+        $('.dropdown-trigger').dropdown();
+// sidenav init
+        $('.sidenav').sidenav();
+    });
+</script>
+
+</body>
+</html>
